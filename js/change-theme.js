@@ -1,15 +1,15 @@
-const themeToggle = document.getElementById('theme-toggle');
-let darkMode = false;
+const toggleButton = document.getElementById('theme-toggle');
 
-themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme', darkMode);
-    darkMode = !darkMode;
+toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
 
-    // Cambiar el ícono dependiendo del estado del tema
-    if (darkMode) {
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>'; // Ícono de sol para tema claro
+    if (document.body.classList.contains('dark-mode')) {
+        toggleButton.textContent = '☀️';
     } else {
-        themeToggle.innerHTML = '<i class="fas fa-moon"></i>'; // Ícono de luna para tema oscuro
+        toggleButton.textContent = '🌙';
     }
 });
+
+
+
 

@@ -13,7 +13,7 @@
 <body>
 
     <button id="theme-toggle">
-        <i class="fas fa-moon"></i> <!-- Ícono de luna para el tema oscuro -->
+        <i class="fas fa-moon"></i>
     </button>
 
     <nav class="floating-nav">
@@ -21,13 +21,12 @@
             <li><a href="#home"><i class="fas fa-home"></i></a></li>
             <li><a href="#about-me"><i class="fas fa-user"></i></a></li>
             <li><a href="#portfolio"><i class="fas fa-briefcase"></i></a></li>
-            <li><a href="#blogs"><i class="fas fa-blog"></i></a></li>
             <li><a href="#contact"><i class="fas fa-envelope"></i></a></li>
         </ul>
     </nav>
 
     <section id="home" class="home">
-        <header id="#home" class="header-home">
+        <header id="home" class="header-home">
             <div class="header-container-home">
                 <div class="header-left-home">
                     <img src="/images/profile-photo.jpg" alt="">
@@ -44,13 +43,13 @@
         </header>
     </section>
 
-    <section id="about-me" class="about-me">
-        <div class="about-me-container">
+    <section id="about-me" class="section-container about-me">
+        <div class="section-content container">
             <h2>About Me</h2>
             <p>
-                My name is Santiago A. Rojas C., a passionate web developer currently studying 
-                Systems Engineering at Simon Bolivar University. I love technology and enjoy 
-                creating user-friendly and efficient web applications. My goal is to become an 
+                My name is Santiago A. Rojas C., a passionate web developer currently studying
+                Systems Engineering at Simon Bolivar University. I love technology and enjoy
+                creating user-friendly and efficient web applications. My goal is to become an
                 expert in web development and contribute to innovative projects.
             </p>
             <h3>Skills</h3>
@@ -82,28 +81,77 @@
             </div>
             <h3>Interesting Facts</h3>
             <p>
-                In my free time, I enjoy playing the guitar and exploring new technologies. 
+                In my free time, I enjoy playing the guitar and exploring new technologies.
                 I'm also an avid reader and love learning about different cultures.
             </p>
         </div>
     </section>
-    
 
-    <section id="portfolio" class="about-me">
-        <!-- Contenido para la sección "Portfolio" -->
+    <section id="portfolio" class="section-container portfolio">
+        <div class="section-content container">
+            <h2>Portfolio</h2>
+            <p>
+                Here are some of the projects I've worked on, showcasing my skills and passion for web development. Each
+                project demonstrates my ability to create user-friendly and efficient applications.
+            </p>
+            <div class="projects-container">
+                <div class="project-box">
+                    <img src="/images/projects.png" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>A brief description of Project 1. This project involved using HTML, CSS, and JavaScript to create
+                        a responsive web application.</p>
+                </div>
+                <div class="project-box">
+                    <img src="/images/projects.png" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>A brief description of Project 2. This project focused on developing a Node.js backend with a
+                        React frontend.</p>
+                </div>
+                <div class="project-box">
+                    <img src="/images/projects.png" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>A brief description of Project 3. This project includes a database integration using SQL & NoSQL
+                        technologies.</p>
+                </div>
+                <div class="project-box">
+                    <img src="/images/projects.png" alt="Project 4">
+                    <h3>Project 4</h3>
+                    <p>A brief description of Project 4. This project showcases my ability to create interactive user
+                        interfaces with React.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="blogs" class="about-me">
-        <!-- Contenido para la sección "Blogs" -->
+
+
+    <section class="contact" id="contact">
+        <h2>Contacto</h2>
+        <div class="section-content container">
+            <p>Si deseas ponerte en contacto conmigo, aquí tienes mis datos:</p>
+            <ul>
+                <li>Email: <a href="mailto:tuemail@example.com">kaleenderoff@gmail.com</a></li>
+                <li>Teléfono: (+57) 321 9745305</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/santiago-rojas-a8b698310">Linkedin</a></li>
+                <li>GitHub: <a href="https://github.com/kaleenderoff">GitHub</a></li>
+            </ul>
+            <h3>Formulario de Contacto</h3>
+            <form action="tu_script_de_envio.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
-    <section id="contact" class="about-me">
-        <!-- Contenido para la sección "Contact Me" -->
-    </section>
 
-
-    <footer>
-
-    </footer>
     <script src="/js/change-theme.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

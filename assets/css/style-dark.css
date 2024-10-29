@@ -1,48 +1,90 @@
-/* Estilos para el tema oscuro */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 body.dark-mode {
-    background-color: #121212; /* Fondo oscuro */
-    color: #ffffff; /* Texto blanco */
+    background-color: #121212;
+    color: #ffffff;
 }
 
-body.dark-mode .header-left {
-    color: #ffffff; /* Texto blanco en el área azul */
-}
-
+body.dark-mode .header-left,
 body.dark-mode .header-right {
-    color: #ffffff; /* Texto blanco en el área blanca */
+    color: #ffffff;
 }
 
 body.dark-mode .floating-nav a {
-    color: #ffffff; /* Texto blanco en la navegación */
-    background-color: #1a73e8; /* Color de fondo de los botones en oscuro */
+    color: #ffffff;
+    background-color: #1a73e8;
 }
 
 body.dark-mode .floating-nav a:hover {
-    background-color: #084a8c; /* Color de fondo al pasar el ratón */
+    background-color: #084a8c;
 }
 
-/* Estilo para el botón de cambio de tema */
+body.dark-mode main {
+    background-color: #000000;
+}
+
+body.dark-mode .container {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.about-me,
+.portfolio,
+.contact {
+    color: #000000;
+}
+
+body.dark-mode .about-me h1,
+body.dark-mode .about-me p,
+body.dark-mode .portfolio h1,
+body.dark-mode .portfolio p,
+body.dark-mode .contact h1,
+body.dark-mode .contact p {
+    color: #ffffff;
+}
+
+.home h1,
+.home p {
+    color: #000000;
+}
+
+body.dark-mode .home h1,
+body.dark-mode .home p {
+    color: #ffffff;
+}
+
+body.dark-mode .home span {
+    color: #1a73e8;
+}
+
 #theme-toggle {
-    position: fixed; /* Fija el botón en una posición en la pantalla */
-    top: 20px; /* Ajusta la distancia desde la parte superior */
-    left: 20px; /* Ajusta la distancia desde la izquierda */
-    background-color: #0a66c2; /* Color de fondo */
-    color: #ffffff; /* Color del texto */
-    border: none; /* Sin borde */
-    font-size: 24px; /* Tamaño del ícono */
-    border-radius: 50%; /* Forma circular */
-    width: 50px; /* Ancho del botón */
-    height: 50px; /* Altura del botón */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    display: flex; /* Usa flex para centrar el contenido */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
-    transition: background-color 0.3s; /* Transición suave */
-    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #0a66c2;
+    color: #ffffff;
+    border: none;
+    font-size: 24px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    z-index: 1000;
 }
 
 #theme-toggle:hover {
-    background-color: #084a8c; /* Cambia el color al pasar el ratón */
+    background-color: #084a8c;
 }
-
-
