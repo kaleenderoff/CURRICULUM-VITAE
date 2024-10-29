@@ -1,0 +1,48 @@
+/* Estilos para el tema oscuro */
+body.dark-mode {
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+body.dark-mode .header-left {
+    color: #ffffff; /* Texto blanco en el área azul */
+}
+
+body.dark-mode .header-right {
+    color: #ffffff; /* Texto blanco en el área blanca */
+}
+
+body.dark-mode .floating-nav a {
+    color: #ffffff; /* Texto blanco en la navegación */
+    background-color: #1a73e8; /* Color de fondo de los botones en oscuro */
+}
+
+body.dark-mode .floating-nav a:hover {
+    background-color: #084a8c; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para el botón de cambio de tema */
+#theme-toggle {
+    position: fixed; /* Fija el botón en una posición en la pantalla */
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    left: 20px; /* Ajusta la distancia desde la izquierda */
+    background-color: #0a66c2; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Sin borde */
+    font-size: 24px; /* Tamaño del ícono */
+    border-radius: 50%; /* Forma circular */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    display: flex; /* Usa flex para centrar el contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    transition: background-color 0.3s; /* Transición suave */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+#theme-toggle:hover {
+    background-color: #084a8c; /* Cambia el color al pasar el ratón */
+}
+
+
